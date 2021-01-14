@@ -15,4 +15,8 @@ if (element === array[middle]) { return middle }
 }
 
 const array = [1, 2, 3, 4, 5, 6, 7]
-console.log(recursiveSearch(array, 9))
+// const middle = Math.floor(array.length /2)
+// console.log(recursiveSearch(array, 9))
+
+
+
