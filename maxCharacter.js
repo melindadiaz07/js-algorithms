@@ -7,15 +7,13 @@ const maxCharacter = (str) => {
 
   
   for(let i = 0; i < str.length; i++){
-      if(charCounter[str[i]]) {
-          charCounter[str[i]] += 1
+      
+          charCounter[str[i]] = charCounter[str[i]]+1 || 1
           
           if (charCounter[str[i]] > charCounter[currentHighest]) {
               currentHighest = str[i] }
               
-      } else {
-          charCounter[str[i]] = 1
-      }
+  
   }
   return currentHighest
 }
