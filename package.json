@@ -2,10 +2,13 @@
   "name": "converter",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "testMocha.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
 }
