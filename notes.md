@@ -1,4 +1,4 @@
-Recursion steps in order:
+Binary Search Recursion console logged steps  in order:
 
 left side: [ 6, 1, 9 ] right side: [ 4, 2, 7 ]
 left side: [ 6 ] right side: [ 1, 9 ]
