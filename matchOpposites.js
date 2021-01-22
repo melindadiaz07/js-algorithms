@@ -10,22 +10,24 @@ function matchOpposites(arr){
   arr.forEach(number => {
       numberCounts[number] = numberCounts[number] + 1 || 1
   })
-  
-  // find opposite, and if it exists add it to return array, and decrement value in table
-  
+
   
   Object.keys(numberCounts).forEach(number => {
-      if(number > 0){
-          // only need to check positive numbers
-          numberCounts[number * -1] ?
-          matchedNumbers.push(number) :
-          null
+      if(number > 0 && numberCounts[number * -1]){
           
-          // need to check if value is greater than 1 for positive key - if so, check value of negetive and push number onto array that the matching multiple of times
+          if(numberCounts[number] >= numberCounts[number * -1]) {
+          for(let i = 1; i <= numberCounts[number * -1]; i++){
+         matchedNumbers.push(number)
+          }
+        } else {
+          for(let i = 1; i <= numberCounts[number]; i++){
+         matchedNumbers.push(number)
+          }
+        }
+      }
   })
   
   return matchedNumbers
-
 
 }
 
