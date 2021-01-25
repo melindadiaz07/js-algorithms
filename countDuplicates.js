@@ -3,6 +3,19 @@
 // to contain only alphabets (both uppercase and lowercase) and numeric digits.
 
 function countDuplicates(string){
-  // cereate hash table  where key is letter or number, value is count
-  // return only those with values higher than 1
-}
+
+  
+      let letterCounts = {}
+      
+      
+      for(let i = 0; i < string.length; i++){
+         
+          if(string[i] != " ") {
+         letterCounts[string[i]] = letterCounts[string[i]] + 1 || 1
+       }
+      }
+    return letterCounts
+  }
+  
+  console.log(countDuplicates("Count the occurences of each of the letters in this sentence"))
+
